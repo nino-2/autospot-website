@@ -12,9 +12,9 @@ const CarCard = ({car}:CarCardProps) => {
 
   const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
   return (
-     <article className="group overflow-hidden rounded-xl border bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+     <article className="group overflow-hidden rounded-xl border bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg ">
       <div className="aspect-[16/10] overflow-hidden">
-        <img src={car.image} alt={`${car.brand} ${car.model}`} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+        <img src={car.image} alt={`${car.brand} ${car.model}`} className="h-full w-full object-cover transition duration-500 group-hover:scale-105 " />
       </div>
       <div className="p-3 sm:p-4">
         <div className="flex items-center justify-between gap-2">

@@ -5,7 +5,7 @@ type Car = {
   id: number;
   brand: string;
   model: string;
-  price: number; // NGN
+  price: number; 
   year: number;
   transmission: string;
   engine: string;

@@ -79,7 +79,7 @@ const Contact = () => {
               <span className="text-white/60">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.37 2.28.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.3 21 3 12.7 3 3a1 1 0 0 1 1-1h2.49a1 1 0 0 1 1 1c0 1.3.2 2.48.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z"/></svg>
               </span>
-              <span>+1 (555) 123-4567</span>
+              <span>+1 (506) 723-4597</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-white/60">
@@ -91,7 +91,7 @@ const Contact = () => {
               <span className="text-white/60">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5"><path d="M12 2a8 8 0 0 0-8 8c0 7 8 12 8 12s8-5 8-12a8 8 0 0 0-8-8Zm0 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/></svg>
               </span>
-              <span>123 Auto Ave, Motor City, USA</span>
+              <span>23B Uptown Hill, Los Angeles, CA, USA</span>
             </div>
           </div>
           <div className="mt-6 flex items-center gap-4 text-white/80">

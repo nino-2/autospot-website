@@ -4,9 +4,13 @@ import Services from '../components/Services'
 import { motion } from 'framer-motion'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
+  const navigate = useNavigate()
+
+
    const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -37,13 +41,15 @@ const HomePage = () => {
                 Browse the latest models and trusted brands all in one place.
               </p>
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link
-                  to="/catalogue"
+                <button
+                  onClick={() => navigate('/catalogue')}
                   className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
                 >
-                  Explore Catalogue
-                  <span className="ml-2">→</span>
-                </Link>
+                  <span className='flex items-center gap-2'>Explore Catalogue
+                    <ArrowRight size={15} className=' text-white'/>
+                  </span>
+                  
+                </button>
               </div>
               <p className="mt-6 text-xs text-gray-300">2000+ listings • 50+ brands • Updated daily</p>
             </div>

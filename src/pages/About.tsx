@@ -1,10 +1,10 @@
-
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
+    const navigate = useNavigate()
   return (
     <>
     <Navbar/>
@@ -59,13 +59,14 @@ const About = () => {
           </li>
         </ol>
         <div className="mt-6">
-          <Link
-            to="/catalogue"
+          <button
+           onClick={() => navigate('/catalogue')}
             className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            Start Exploring
-            <ArrowRight size={18} className="ml-2 text-white" />
-          </Link>
+            <span className='flex items-center gap-2'>Explore Catalogue
+                <ArrowRight size={15} className=' text-white'/>
+            </span>
+          </button>
         </div>
       </div>
     </section>

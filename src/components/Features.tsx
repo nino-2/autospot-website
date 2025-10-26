@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 
 
 const cars = [
@@ -52,12 +54,13 @@ const cars = [
 ];
 
 const Features = () => {
+  const navigate = useNavigate();
   return (
     <div>
         <section id="featured" className="container mx-auto px-7 py-12 sm:py-16">
         <div className="flex items-end justify-between gap-4">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Featured Cars</h2>
-          <a href="/catalogue" className="text-sm font-medium text-blue-600 hover:text-blue-700">See all</a>
+          <button onClick={() => navigate("/catalogue")}  className="text-sm font-medium text-blue-600 hover:text-blue-700 cursor-pointer">See all</button>
         </div>
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cars.slice(0, 6).map((car) => (
