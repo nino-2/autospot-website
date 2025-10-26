@@ -61,7 +61,7 @@ const About = () => {
         <div className="mt-6">
           <button
            onClick={() => navigate('/catalogue')}
-            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
           >
             <span className='flex items-center gap-2'>Explore Catalogue
                 <ArrowRight size={15} className=' text-white'/>

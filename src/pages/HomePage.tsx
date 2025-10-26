@@ -1,4 +1,3 @@
-
 import Features from '../components/Features'
 import Services from '../components/Services'
 import { motion } from 'framer-motion'
@@ -43,7 +42,7 @@ const HomePage = () => {
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => navigate('/catalogue')}
-                  className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+                  className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900 cursor-pointer"
                 >
                   <span className='flex items-center gap-2'>Explore Catalogue
                     <ArrowRight size={15} className=' text-white'/>
