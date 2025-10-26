@@ -1,7 +1,8 @@
-import React from 'react'
+
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 
 const About = () => {
   return (
@@ -63,7 +64,7 @@ const About = () => {
             className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             Start Exploring
-            <span className="ml-2">→</span>
+            <ArrowRight size={18} className="ml-2 text-white" />
           </Link>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import  type {  Car } from '../types';
 
 interface CarCardProps {

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import  { useMemo, useState } from 'react'
 import CarCard from '../components/CarCard';
 import type { Car} from '../types'
 import Navbar from '../components/Navbar';

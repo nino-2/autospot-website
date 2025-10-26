@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Features from '../components/Features'
 import Services from '../components/Services'
 import { motion } from 'framer-motion'
